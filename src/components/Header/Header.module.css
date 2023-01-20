@@ -1,0 +1,51 @@
+.container{
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 10px;
+}
+.logo__img{
+  width: 118px;
+  height: 93px;
+  margin-right: 60px;
+  margin-left: 20px;
+}
+.inner{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  border-bottom: 3px solid black;
+  border-radius: 20px;
+}
+.navigation{
+  display: flex;
+  justify-content: space-between;
+}
+.categories{
+}
+.categories__name{
+  margin-right: 35px;
+  cursor: pointer;
+  font-size: 25px;
+  display: inline-block;
+  position: relative;
+  margin-top: 60px;
+  transition: all .5s;
+}
+.categories__name:hover{
+  font-size: 26px;
+  border-bottom: 1px solid black;
+  border-radius: 10%;
+}
+.icons{
+  display: flex;
+  margin-top: 60px;
+}
+.icon__logo{
+  display: inline-block;
+  margin-right: 30px;
+  cursor: pointer;
+}
+.icon__logo:hover{
+  width: 30px;
+  height: 30px;
+}
