@@ -1,9 +1,9 @@
 import React from "react";
 import s from "./Header.module.css";
-import logo from "../../assets/images/icons/logo.png";
-import authLogo from "../../assets/images/icons/profile.png";
-import searchLogo from "../../assets/images/icons/search.png";
-import bucketLogo from "../../assets/images/icons/bucket.png";
+import logo from "../../assets/images/icons/re-sale-logo.png";
+import authLogo from "../../assets/images/icons/profile.svg";
+import searchLogo from "../../assets/images/icons/search.svg";
+import bucketLogo from "../../assets/images/icons/bucket.svg";
 import { Link } from "react-router-dom";
 
 export const Header = () => {
