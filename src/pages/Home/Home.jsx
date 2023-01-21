@@ -2,12 +2,13 @@ import React from "react";
 import s from "./Home.module.css";
 import man from "../../assets/images/homepage/home-man.jpg";
 import woman from "../../assets/images/homepage/home-woman.jpg";
+import { Brands } from "./../../components/Brands/Brands";
 
 export const Home = () => {
   return (
     <div className="">
       <div className={s.parallax_effect}>
-        <h1 className={s.paralax_title}>RE-SALE</h1>
+        <h1 className={s.parallax_title}>RE - SALE</h1>
       </div>
 
       <div className={s.container}>
@@ -55,6 +56,7 @@ export const Home = () => {
             </ul>
           </a>
         </div>
+        <Brands />
       </div>
     </div>
   );

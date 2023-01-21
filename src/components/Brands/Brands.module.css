@@ -1,0 +1,39 @@
+
+
+.brands{
+  margin-bottom: 100px;
+  max-width: 1400px !important;
+}
+.brandsLink{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.brandsImg{
+  width: 100px;
+  height: 100px;
+  
+  margin-left: 40px;
+}
+.brandsTitle{
+  font-size: 20px;
+  color: rgb(118, 113, 113);
+  display: flex;
+  justify-content: center;
+  transition: all ease .3s;
+}
+.brandsTitle:hover{
+  color: #000;
+}
+.slider{
+  margin-left: 40px;
+}
+:root {
+  --swiper-theme-color: #000 !important; 
+}
+.swiper-button-prev::after{
+  position: absolute;
+  margin-right: 40px;
+  right: 40px;
+  left: 100px;
+}

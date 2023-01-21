@@ -1,5 +1,5 @@
 .container{
-  max-width: 1600px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -7,19 +7,17 @@
   min-height: 100vh;
   text-align: center;
   padding-top: 20%;
-  color: #fff;
-  font-size: 56px;
-  line-height: 50px;
-  transform-style: inherit;
-  width: 100vw;
   background-image: url("../../assets/images/homepage/home-paralax.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  transition: 1s;
+  overflow-x: hidden;
 }
 
 .parallax_title{
-  
+  text-shadow: 3px 3px 3px #000;
+  color: #fff;
+  font-size: 94px;
+  line-height: 76px;
 }
 .inner{
   margin-top: 70px;
@@ -31,20 +29,18 @@
 .inner_img_man {
   background-image: url("../../assets/images/homepage/home-man.jpg");
   background-size: cover;
-  background-position: 50%;
   background-repeat: no-repeat;
-  width: 700px;
-  height: 1000px;
+  width: 500px;
+  height: 600px;
   border-radius: 5%;
   transition: all ease .5s;
 }
 .inner_img_woman{
   background-image: url("../../assets/images/homepage/home-woman.jpg");
   background-size: cover;
-  background-position: 50%;
   background-repeat: no-repeat;
-  width: 700px;
-  height: 1000px;
+  width: 500px;
+  height: 600px;
   border-radius: 5%;
   transition: all ease .5s;
 }
@@ -56,7 +52,7 @@
 }
 .inner_link:hover .inner_list{
   opacity: 1;
-  transform: translateY(-100%);
+  transform: translateY(-80%);
 }
 .inner_link:hover .inner_img_man {
   filter: brightness(40%)
@@ -69,7 +65,8 @@
 .inner_title{
   display: inline-block;
   position: absolute;
-  font-size: 40px;
+  font-size: 30px;
+  text-shadow: 3px 3px 3px #000;
   display: flex;
   top: 45%;
   left: 3%;
@@ -83,7 +80,7 @@
   list-style: none;
   display: inline-block;
   position: absolute;
-  font-size: 30px;
+  font-size: 20px;
   display: flex;
   flex-direction: column;
   top: 50%;
