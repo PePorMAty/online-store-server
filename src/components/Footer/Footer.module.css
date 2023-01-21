@@ -3,7 +3,7 @@
   margin: 0 auto;
 }
 .footerBg{
-  background-color: rgba(97, 44, 181, 0.428);
+  background-color: rgba(103, 33, 217, 0.911);
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -13,13 +13,17 @@
 }
 .footerTitle{
   font-size: 20px;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
 }
 .footerText{
   display: block;
   font-size: 19px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   transition: all ease .3s;
+  color: #fff;
 }
 .footerText:hover{
   color: beige;
+  text-shadow: 1px 1px 1px #000;
 }

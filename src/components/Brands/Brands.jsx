@@ -13,23 +13,19 @@ import vans from "../../assets/images/brandsLogo/vans.png";
 import jordan from "../../assets/images/brandsLogo/jordan.png";
 import converse from "../../assets/images/brandsLogo/converse.png";
 import newBalance from "../../assets/images/brandsLogo/newBalance.png";
+import { nanoid } from "nanoid";
+import { observer } from "mobx-react-lite";
+import brands from "../../store/homeBrands";
+import homeBrands from "../../store/homeBrands";
 
-export const Brands = () => {
-  let brandsArray = [
-    { id: 2, img: nike, name: "Nike" },
-    { id: 3, img: puma, name: "Puma" },
-    { id: 1, img: adidas, name: "Adidas" },
-    { id: 4, img: reebok, name: "Reebok" },
-    { id: 5, img: vans, name: "Vans" },
-    { id: 6, img: jordan, name: "Jordan" },
-    { id: 7, img: converse, name: "Converse" },
-    { id: 8, img: newBalance, name: "New Balance" },
-  ];
-  let listBrands = brandsArray.map((i) => (
+export const Brands = observer(() => {
+  let size = 5;
+
+  let listBrands = homeBrands.brands.map((brand) => (
     <SwiperSlide>
-      <a className={s.brandsLink} href="#" key={i.id}>
-        <img className={s.brandsImg} src={i.img} alt="" />
-        <p className={s.brandsTitle}>{i.name}</p>
+      <a className={s.brandsLink} href="#">
+        <img className={s.brandsImg} src={brand.img} alt="" />
+        <p className={s.brandsTitle}>{brand.name}</p>
       </a>
     </SwiperSlide>
   ));
@@ -46,4 +42,4 @@ export const Brands = () => {
       </Swiper>
     </div>
   );
-};
+});
