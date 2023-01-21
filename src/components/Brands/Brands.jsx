@@ -38,8 +38,8 @@ export const Brands = () => {
     <div className={s.brands}>
       <Swiper
         modules={[Navigation]}
-        spaceBetween={10}
-        slidesPerView={6}
+        spaceBetween={0}
+        slidesPerView={5}
         navigation
       >
         {listBrands}
