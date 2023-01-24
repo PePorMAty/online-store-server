@@ -5,7 +5,7 @@ const User = sequelize.define("user", {
   id: { type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true },
   email: { type: DataTypes.STRING, unique: true },
   password: { type: DataTypes.STRING },
-  role: [{ type: DataTypes.STRING, defaultValue: "USER" }],
+  role: { type: DataTypes.STRING, defaultValue: "USER" },
 });
 
 const Basket = sequelize.define("basket", {
@@ -58,7 +58,7 @@ Clothes.belongsTo(Brand);
 Clothes.hasMany(BasketClothes);
 BasketClothes.belongsTo(Clothes);
 
-Clothes.hasMany(ClothesInfo);
+Clothes.hasMany(ClothesInfo, { as: "info" });
 ClothesInfo.belongsTo(Clothes);
 
 Type.belongsToMany(Brand, { through: TypeBrand });
